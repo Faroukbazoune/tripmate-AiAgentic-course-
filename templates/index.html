@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Travel Planner</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AI Travel Planner</h1>
+        <p>Plan flights, hotels, and your complete itinerary with AI</p>
+    </header>
+
+
+    <main class="container">
+
+        <!-- User input -->
+        <section class="search-box">
+
+            <textarea
+                id="userQuery"
+                placeholder="Example: I want to travel from Algiers to Paris for 5 days. Find flights, hotels and create an itinerary."
+            ></textarea>
+
+            <button
+                id="submitButton"
+                onclick="planTrip()"
+            >
+                Plan My Trip
+            </button>
+
+        </section>
+
+
+        <!-- Loading -->
+        <div id="loading" class="loading">
+            Planning your trip...
+        </div>
+
+
+        <!-- Error -->
+        <div id="error" class="error"></div>
+
+
+        <!-- Results -->
+        <section id="results" class="results">
+
+            <!-- Final answer -->
+            <div class="card final-answer">
+
+                <h2>Your Travel Plan</h2>
+
+                <div
+                    id="finalAnswer"
+                    class="content"
+                ></div>
+
+                <div
+                    id="threadId"
+                    class="thread-id"
+                ></div>
+
+            </div>
+
+
+            <!-- Flights -->
+            <div class="card">
+
+                <h2>Flight Information</h2>
+
+                <div
+                    id="flightResults"
+                    class="content"
+                ></div>
+
+            </div>
+
+
+            <!-- Hotels -->
+            <div class="card">
+
+                <h2>Hotel Information</h2>
+
+                <div
+                    id="hotelResults"
+                    class="content"
+                ></div>
+
+            </div>
+
+
+            <!-- Itinerary -->
+            <div class="card">
+
+                <h2>Itinerary</h2>
+
+                <div
+                    id="itineraryResults"
+                    class="content"
+                ></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
+```

@@ -7,7 +7,6 @@ load_dotenv(find_dotenv())
 client = TavilyClient()
 
 
-@tool
 def tavily_serach(query: str):
     """this tool is specialized in researching
     Args:
